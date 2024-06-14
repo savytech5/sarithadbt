@@ -1,0 +1,106 @@
+[0m14:48:06.665982 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ffc7310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ffe69d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ffe7210>]}
+
+
+============================== 14:48:06.669274 | b6e70341-6f47-4c95-bc03-58d3b809fec9 ==============================
+[0m14:48:06.669274 [info ] [MainThread]: Running with dbt=1.8.2
+[0m14:48:06.670066 [debug] [MainThread]: running dbt with arguments {'write_json': 'True', 'partial_parse': 'True', 'use_experimental_parser': 'False', 'target_path': 'None', 'profiles_dir': '/Users/saritha/.dbt', 'introspect': 'True', 'fail_fast': 'False', 'log_format': 'default', 'invocation_command': 'dbt init', 'use_colors': 'True', 'warn_error': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'printer_width': '80', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'version_check': 'True', 'cache_selected_only': 'False', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'no_print': 'None', 'static_parser': 'True', 'debug': 'False', 'log_path': 'logs'}
+[0m14:48:44.738238 [debug] [MainThread]: Starter project path: /opt/anaconda3/lib/python3.11/site-packages/dbt/include/starter_project
+[0m14:48:44.751221 [info ] [MainThread]: 
+Your new dbt project "sarithadbtproject" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m14:48:44.752172 [info ] [MainThread]: Setting up your profile.
+[0m14:49:54.897782 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m14:49:54.898391 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m14:49:54.898843 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m14:54:58.927114 [info ] [MainThread]: Profile sarithadbtproject written to /Users/saritha/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m14:54:58.965658 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 412.38748, "process_user_time": 2.488017, "process_kernel_time": 0.578933, "process_mem_max_rss": "178962432", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m14:54:58.966549 [debug] [MainThread]: Command `dbt init` succeeded at 14:54:58.966380 after 412.39 seconds
+[0m14:54:58.967085 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ffc7c90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ffc7a10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bfe9610>]}
+[0m14:54:58.967690 [debug] [MainThread]: Flushing usage events
+[0m14:55:21.489853 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113b64c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113b7ac50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113b7b490>]}
+
+
+============================== 14:55:21.493802 | 03cb93dd-3616-4136-a9af-4dc1a3c1692c ==============================
+[0m14:55:21.493802 [info ] [MainThread]: Running with dbt=1.8.2
+[0m14:55:21.494621 [debug] [MainThread]: running dbt with arguments {'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_format': 'default', 'partial_parse': 'True', 'no_print': 'None', 'debug': 'False', 'quiet': 'False', 'log_path': 'logs', 'log_cache_events': 'False', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'introspect': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/saritha/.dbt', 'fail_fast': 'False', 'printer_width': '80', 'write_json': 'True', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'warn_error': 'None', 'target_path': 'None'}
+[0m14:55:21.515835 [info ] [MainThread]: dbt version: 1.8.2
+[0m14:55:21.516390 [info ] [MainThread]: python version: 3.11.7
+[0m14:55:21.516834 [info ] [MainThread]: python path: /opt/anaconda3/bin/python
+[0m14:55:21.517239 [info ] [MainThread]: os info: macOS-10.16-x86_64-i386-64bit
+[0m14:55:21.534668 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.clickhouse'
+[0m14:55:21.647765 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m14:55:21.648367 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m14:55:21.648788 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m14:55:23.108704 [info ] [MainThread]: Using profiles dir at /Users/saritha/.dbt
+[0m14:55:23.109101 [info ] [MainThread]: Using profiles.yml file at /Users/saritha/.dbt/profiles.yml
+[0m14:55:23.109385 [info ] [MainThread]: Using dbt_project.yml file at /Users/saritha/sarithadbt/dbt_project.yml
+[0m14:55:23.109675 [info ] [MainThread]: Configuration:
+[0m14:55:23.109946 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m14:55:23.110216 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m14:55:23.110485 [info ] [MainThread]: Required dependencies:
+[0m14:55:23.111899 [debug] [MainThread]: Executing "git --help"
+[0m14:55:23.146481 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m14:55:23.147645 [debug] [MainThread]: STDERR: "b''"
+[0m14:55:23.148139 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m14:55:23.148634 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m14:55:23.149379 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m14:55:23.149812 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "clickhouse_raiderexpress", target "dev" invalid: Runtime Error
+    Could not find adapter type clickhouse!
+
+
+[0m14:55:23.150241 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/saritha/sarithadbt/dbt_project.yml> not found
+
+[0m14:55:23.152891 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 1.7569187, "process_user_time": 2.885674, "process_kernel_time": 0.76714, "process_mem_max_rss": "179625984", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m14:55:23.153905 [debug] [MainThread]: Command `dbt debug` failed at 14:55:23.153715 after 1.76 seconds
+[0m14:55:23.154807 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113b534d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113b8ac90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113b8be90>]}
+[0m14:55:23.156097 [debug] [MainThread]: Flushing usage events
+[0m15:00:34.881526 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fab3750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fad2e90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fad3690>]}
+
+
+============================== 15:00:34.885061 | d352c7b0-5c6f-455c-bec8-6f5c9f77389a ==============================
+[0m15:00:34.885061 [info ] [MainThread]: Running with dbt=1.8.2
+[0m15:00:34.885868 [debug] [MainThread]: running dbt with arguments {'indirect_selection': 'eager', 'target_path': 'None', 'cache_selected_only': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'warn_error': 'None', 'version_check': 'True', 'introspect': 'True', 'no_print': 'None', 'fail_fast': 'False', 'invocation_command': 'dbt init', 'debug': 'False', 'log_cache_events': 'False', 'quiet': 'False', 'send_anonymous_usage_stats': 'True', 'profiles_dir': '/Users/saritha/.dbt', 'use_experimental_parser': 'False', 'use_colors': 'True', 'partial_parse': 'True', 'printer_width': '80', 'write_json': 'True', 'log_format': 'default', 'log_path': 'logs'}
+[0m15:00:55.403988 [debug] [MainThread]: Starter project path: /opt/anaconda3/lib/python3.11/site-packages/dbt/include/starter_project
+[0m15:00:55.413804 [info ] [MainThread]: 
+Your new dbt project "sarithadbtnew" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m15:00:55.414375 [info ] [MainThread]: Setting up your profile.
+[0m15:00:58.185197 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m15:00:58.185789 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m15:00:58.186223 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m15:03:27.147331 [info ] [MainThread]: Profile sarithadbtnew written to /Users/saritha/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m15:03:27.150781 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 172.36374, "process_user_time": 2.438699, "process_kernel_time": 0.562237, "process_mem_max_rss": "178462720", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m15:03:27.151595 [debug] [MainThread]: Command `dbt init` succeeded at 15:03:27.151436 after 172.36 seconds
+[0m15:03:27.152118 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fad3250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fae29d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bad5710>]}
+[0m15:03:27.152688 [debug] [MainThread]: Flushing usage events
